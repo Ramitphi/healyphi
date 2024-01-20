@@ -52,7 +52,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var connectkit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! connectkit */ \"connectkit\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([connectkit__WEBPACK_IMPORTED_MODULE_1__]);\nconnectkit__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"flex flex-col bg-[#B1D27B] justify-center items-center h-screen w-full \",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(connectkit__WEBPACK_IMPORTED_MODULE_1__.ConnectKitButton, {}, void 0, false, {\n                fileName: \"/Users/ramit/healphi/healyphi/src/pages/index.jsx\",\n                lineNumber: 6,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                className: \"mt-10 border  border-white px-4 py-2 rounded-md\",\n                children: \"Continue as Guest\"\n            }, void 0, false, {\n                fileName: \"/Users/ramit/healphi/healyphi/src/pages/index.jsx\",\n                lineNumber: 7,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/ramit/healphi/healyphi/src/pages/index.jsx\",\n        lineNumber: 5,\n        columnNumber: 5\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXguanN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQThDO0FBRS9CLFNBQVNDO0lBQ3RCLHFCQUNFLDhEQUFDQztRQUFJQyxXQUFVOzswQkFDYiw4REFBQ0gsd0RBQWdCQTs7Ozs7MEJBQ2pCLDhEQUFDSTtnQkFBT0QsV0FBVTswQkFBa0Q7Ozs7Ozs7Ozs7OztBQUsxRSIsInNvdXJjZXMiOlsid2VicGFjazovL2FscGhhLWh1ZGRsZTAxLy4vc3JjL3BhZ2VzL2luZGV4LmpzeD9kMzVjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbm5lY3RLaXRCdXR0b24gfSBmcm9tIFwiY29ubmVjdGtpdFwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbCBiZy1bI0IxRDI3Ql0ganVzdGlmeS1jZW50ZXIgaXRlbXMtY2VudGVyIGgtc2NyZWVuIHctZnVsbCBcIj5cbiAgICAgIDxDb25uZWN0S2l0QnV0dG9uIC8+XG4gICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cIm10LTEwIGJvcmRlciAgYm9yZGVyLXdoaXRlIHB4LTQgcHktMiByb3VuZGVkLW1kXCI+XG4gICAgICAgIENvbnRpbnVlIGFzIEd1ZXN0XG4gICAgICA8L2J1dHRvbj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cbiJdLCJuYW1lcyI6WyJDb25uZWN0S2l0QnV0dG9uIiwiSG9tZSIsImRpdiIsImNsYXNzTmFtZSIsImJ1dHRvbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/pages/index.jsx\n");
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var connectkit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! connectkit */ \"connectkit\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ \"./node_modules/next/router.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var wagmi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! wagmi */ \"wagmi\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([connectkit__WEBPACK_IMPORTED_MODULE_1__, wagmi__WEBPACK_IMPORTED_MODULE_3__]);\n([connectkit__WEBPACK_IMPORTED_MODULE_1__, wagmi__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\nfunction Home() {\n    const { push } = (0,next_router__WEBPACK_IMPORTED_MODULE_2__.useRouter)();\n    const { isConnected } = (0,wagmi__WEBPACK_IMPORTED_MODULE_3__.useAccount)();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"flex flex-col bg-[#B1D27B] justify-center items-center h-screen w-full \",\n        children: [\n            isConnected && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: ()=>push(\"/meetings\"),\n                className: \"mb-10 border  border-white px-4 py-2 rounded-md\",\n                children: \"Continue\"\n            }, void 0, false, {\n                fileName: \"/Users/ramit/healphi/healyphi/src/pages/index.jsx\",\n                lineNumber: 12,\n                columnNumber: 9\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(connectkit__WEBPACK_IMPORTED_MODULE_1__.ConnectKitButton, {}, void 0, false, {\n                fileName: \"/Users/ramit/healphi/healyphi/src/pages/index.jsx\",\n                lineNumber: 19,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/ramit/healphi/healyphi/src/pages/index.jsx\",\n        lineNumber: 10,\n        columnNumber: 5\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXguanN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQThDO0FBQ047QUFDTDtBQUVwQixTQUFTRztJQUN0QixNQUFNLEVBQUVDLElBQUksRUFBRSxHQUFHSCxzREFBU0E7SUFDMUIsTUFBTSxFQUFFSSxXQUFXLEVBQUUsR0FBR0gsaURBQVVBO0lBRWxDLHFCQUNFLDhEQUFDSTtRQUFJQyxXQUFVOztZQUNaRiw2QkFDQyw4REFBQ0c7Z0JBQ0NDLFNBQVMsSUFBTUwsS0FBSztnQkFDcEJHLFdBQVU7MEJBQ1g7Ozs7OzswQkFJSCw4REFBQ1Asd0RBQWdCQTs7Ozs7Ozs7Ozs7QUFHdkIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hbHBoYS1odWRkbGUwMS8uL3NyYy9wYWdlcy9pbmRleC5qc3g/ZDM1YyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb25uZWN0S2l0QnV0dG9uIH0gZnJvbSBcImNvbm5lY3RraXRcIjtcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gXCJuZXh0L3JvdXRlclwiO1xuaW1wb3J0IHsgdXNlQWNjb3VudCB9IGZyb20gXCJ3YWdtaVwiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkge1xuICBjb25zdCB7IHB1c2ggfSA9IHVzZVJvdXRlcigpO1xuICBjb25zdCB7IGlzQ29ubmVjdGVkIH0gPSB1c2VBY2NvdW50KCk7XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC1jb2wgYmctWyNCMUQyN0JdIGp1c3RpZnktY2VudGVyIGl0ZW1zLWNlbnRlciBoLXNjcmVlbiB3LWZ1bGwgXCI+XG4gICAgICB7aXNDb25uZWN0ZWQgJiYgKFxuICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgb25DbGljaz17KCkgPT4gcHVzaChcIi9tZWV0aW5nc1wiKX1cbiAgICAgICAgICBjbGFzc05hbWU9XCJtYi0xMCBib3JkZXIgIGJvcmRlci13aGl0ZSBweC00IHB5LTIgcm91bmRlZC1tZFwiXG4gICAgICAgID5cbiAgICAgICAgICBDb250aW51ZVxuICAgICAgICA8L2J1dHRvbj5cbiAgICAgICl9XG4gICAgICA8Q29ubmVjdEtpdEJ1dHRvbiAvPlxuICAgIDwvZGl2PlxuICApO1xufVxuIl0sIm5hbWVzIjpbIkNvbm5lY3RLaXRCdXR0b24iLCJ1c2VSb3V0ZXIiLCJ1c2VBY2NvdW50IiwiSG9tZSIsInB1c2giLCJpc0Nvbm5lY3RlZCIsImRpdiIsImNsYXNzTmFtZSIsImJ1dHRvbiIsIm9uQ2xpY2siXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/index.jsx\n");
 
 /***/ }),
 
@@ -85,6 +85,17 @@ module.exports = require("next/dist/compiled/next-server/pages.runtime.dev.js");
 
 "use strict";
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-dom":
+/*!****************************!*\
+  !*** external "react-dom" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-dom");
 
 /***/ }),
 
@@ -143,6 +154,17 @@ module.exports = import("wagmi/chains");;
 
 /***/ }),
 
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -151,6 +173,28 @@ module.exports = import("wagmi/chains");;
 
 "use strict";
 module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ })
 

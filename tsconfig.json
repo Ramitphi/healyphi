@@ -17,6 +17,23 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/component/ChatBox/ChatBox.jsx", "src/component/ChatBox/LocalMessageBubble.jsx", "src/component/ChatBox/RemoteMessageBubble.jsx", "src/component/RemotePeer/RemotePeer.jsx", "src/pages/[roomId]/index.jsx", "src/pages/api/getAccessToken.js", "src/pages/api/startRecording.js", "src/pages/api/stopRecording.js", "src/pages/_app.jsx", "src/pages/_document.jsx", "src/pages/index.jsx", "tailwind.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/component/ChatBox/ChatBox.jsx",
+    "src/component/ChatBox/LocalMessageBubble.jsx",
+    "src/component/ChatBox/RemoteMessageBubble.jsx",
+    "src/component/RemotePeer/RemotePeer.jsx",
+    "src/pages/[roomId]/index.jsx",
+    "src/pages/api/getAccessToken.js",
+    "src/pages/api/startRecording.js",
+    "src/pages/api/stopRecording.js",
+    "src/pages/_app.jsx",
+    "src/pages/_document.jsx",
+    "src/pages/index.jsx",
+    "tailwind.config.js",
+    "src/component/MeetingCard.jsx"
+  ],
   "exclude": ["node_modules"]
 }

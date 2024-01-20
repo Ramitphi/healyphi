@@ -143,7 +143,7 @@ export default function Home({ token }) {
             <div className="relative flex gap-2">
               {isVideoOn && (
                 <div className=" flex flex-col">
-                  <div className="w-40 mx-auto border-2 rounded-xl border-blue-400">
+                  <div className="w-[450px] mx-auto border-2 rounded-xl border-blue-400">
                     <video
                       ref={videoRef}
                       className="aspect-video rounded-xl"

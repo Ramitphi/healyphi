@@ -18,6 +18,7 @@ function ChatBox() {
     },
   });
 
+  console.log({ address: metadata.address });
   const sendMessage = () => {
     sendData({
       to: "*",

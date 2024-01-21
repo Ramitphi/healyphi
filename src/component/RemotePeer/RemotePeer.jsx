@@ -16,7 +16,9 @@ const RemotePeer = ({ peerId }) => {
   const screenVideoRef = useRef(null);
   const screenAudioRef = useRef(null);
 
-  const { metadata } = useRemotePeer(peerId);
+  const { metadata } = useRemotePeer({ peerId });
+
+  console.log({ remote: metadata });
 
   useEffect(() => {
     console.log("stream", stream);

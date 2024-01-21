@@ -1,3 +1,5 @@
+"use client";
+
 import { ConnectKitButton } from "connectkit";
 import { useRouter } from "next/router";
 import { useAccount } from "wagmi";

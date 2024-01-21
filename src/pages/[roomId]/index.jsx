@@ -12,6 +12,7 @@ import { AccessToken, Role } from "@huddle01/server-sdk/auth";
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import Header from "@/component/Header/header";
 import { useAccount } from "wagmi";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -55,20 +56,21 @@ export default function Home({ token }) {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center bg-[#B1D27B]  p-4 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center bg-[#98ffb7]  p-4 ${inter.className}`}
     >
-      <div className="z-10 max-w-5xl w-full items-center justify-between bg-[#B1D27B] font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+      <Header />
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex mt-24">
+        <p className="fixed left-0 top-0 flex w-full bg-[#242424] justify-center border-b border-gray-300  backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-[#242424] lg:p-3 lg:dark:bg-[#242424]">
           <code className="font-mono font-bold">{state}</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center  dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           {state === "idle" && (
-            <>
+            <div className="mx-4">
               <input
                 disabled={state !== "idle"}
                 placeholder="Display Name"
                 type="text"
-                className="border-2 border-blue-400 rounded-lg p-2 mx-2 bg-black text-white"
+                className="h-[42px] px-3 py-[16px] rounded-xl border border-[#D9D9D9] placeholder:font-montserrat placeholder:text-[#242424] text-[#2D2D2D]"
                 value={displayName}
                 onChange={(event) => setDisplayName(event.target.value)}
               />
@@ -86,7 +88,7 @@ export default function Home({ token }) {
               >
                 Join Room
               </button>
-            </>
+            </div>
           )}
 
           {state === "connected" && (

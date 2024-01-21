@@ -1,6 +1,5 @@
 import { ConnectKitButton } from "connectkit";
 import { useRouter } from "next/router";
-import Header from "@/component/Header/header";
 import { useEffect } from "react";
 import { useAccount, useWrite } from "wagmi";
 import { parseUnits } from "viem";
@@ -53,12 +52,11 @@ export default function Home() {
   }, [isConnected]);
 
   return (
-    <div className="flex flex-col bg-[#98ffb7] justify-center items-center h-screen w-full relative">
-      <Header />
+    <div className="flex flex-col bg-[#B1D27B] justify-center items-center h-screen w-full ">
       {isConnected && (
         <button
           onClick={() => push("/meetings")}
-          className="mb-10 px-4 py-2 rounded-md bg-[#242424]"
+          className="mb-10 border  border-white px-4 py-2 rounded-md"
         >
           Continue
         </button>

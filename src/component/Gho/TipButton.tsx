@@ -34,6 +34,8 @@ const TipButton = ({ address, displayName }: Props) => {
       <button
         className="border mt-3 border-black px-4 py-2 bg-white w-full text-white font-semibold  rounded-md"
         onClick={() => {
+          // trasnfer transaction for in-meeting tipping
+
           // 90% tip to the person
           write({
             args: [address, parseUnits(hostamount.toString(), 18)],

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import axios from "axios";
 // import { MeetingCard } from "../../component/MeetingCard/MeetingCard";
+import BorrowButton from "../../component/Gho/BorrowButton.jsx";
 
 const Meetings = () => {
   const { push } = useRouter();
@@ -70,8 +71,9 @@ const Meetings = () => {
       >
         Create Space
       </button>
+      <BorrowButton />
 
-      <div className="grid grid-cols-3 h-[9/10] overflow-y-auto bg-red-500  w-full">
+      <div className="grid grid-cols-3 h-[9/10]  overflow-y-auto  w-3/4">
         {meetings.map((meeting, i) => {
           console.log({ meeting });
           return (

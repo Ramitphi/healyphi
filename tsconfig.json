@@ -33,7 +33,11 @@
     "src/pages/_document.jsx",
     "src/pages/index.jsx",
     "tailwind.config.js",
-    "src/component/MeetingCard.jsx"
+    "src/component/MeetingCard.jsx",
+    "src/gho/abi.js",
+    "src/component/Gho/TipButton.tsx",
+    "public/avatar.js",
+    "src/component/Gho/BorrowButton.jsx"
   ],
   "exclude": ["node_modules"]
 }

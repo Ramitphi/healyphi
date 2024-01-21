@@ -35,7 +35,9 @@
     "tailwind.config.js",
     "src/component/MeetingCard.jsx",
     "src/gho/abi.js",
-    "src/component/Gho/TipButton.jsx"
+    "src/component/Gho/TipButton.tsx",
+    "public/avatar.js",
+    "src/component/Gho/BorrowButton.jsx"
   ],
   "exclude": ["node_modules"]
 }

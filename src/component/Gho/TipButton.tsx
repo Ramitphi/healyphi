@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useContractWrite } from "wagmi";
-import abi from "../../gho/abi";
+import abi from "../../gho/ghoAbi";
 import { parseUnits } from "viem";
 
 type Props = {
@@ -8,11 +8,9 @@ type Props = {
   displayName: string;
 };
 const TipButton = ({ address, displayName }: Props) => {
-  console.log("-----------------");
-
   console.log(address);
-  console.log("-----------------");
 
+  const [amount, setAmount] = useState<string>("");
   const userData = displayName;
 
   const { data, isLoading, isSuccess, write } = useContractWrite({
@@ -21,20 +19,32 @@ const TipButton = ({ address, displayName }: Props) => {
     functionName: "transfer",
   });
 
-  return (
-    <button
-      className="border border-white px-4 py-2 bg-white w-full text-black font-semibold  rounded-md"
-      onClick={
-        () =>
-          write({
-            args: [address, parseUnits("1", 18)],
-          })
+  const hostamount = Number(amount) * 0.9;
+  const projectAmount = Number(amount) * 0.1;
 
-        // alert(metadata.address)
-      }
-    >
-      {`Tip ${displayName}`}
-    </button>
+  return (
+    <div className="flex flex-col">
+      <input
+        className="mb-3 h-10 w-full text-black rounded-md"
+        placeholder=" Number of Gho"
+        onChange={(e) => setAmount(e.target.value)}
+      />
+
+      <button
+        className="border mt-3 border-black px-4 py-2 bg-white w-full text-white font-semibold  rounded-md"
+        onClick={() => {
+          write({
+            args: [address, parseUnits(hostamount.toString(), 18)],
+          });
+
+          write({
+            args: [address, parseUnits(projectAmount.toString(), 18)],
+          });
+        }}
+      >
+        {`Tip ${displayName}`}
+      </button>
+    </div>
   );
 };
 

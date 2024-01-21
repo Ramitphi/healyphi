@@ -111,12 +111,6 @@ const RemotePeer = ({ peerId }) => {
         />
       )}
       <div className="text-lg font-bold">{metadata.displayName}</div>
-      {/* <button
-        className="border border-white px-4 py-2 bg-white w-full text-black font-semibold  rounded-md"
-        onClick={() => alert(metadata?.address)}
-      >
-        Tip {metadata.displayName}
-      </button> */}
 
       <TipButton
         address={metadata.address}

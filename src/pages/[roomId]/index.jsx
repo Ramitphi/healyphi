@@ -161,7 +161,7 @@ export default function Home({ token }) {
                   </div>
                 </div>
               ) : (
-                <div className="w-[450px] h-[250px] flex justify-center items-center mx-auto border-2 rounded-xl border-blue-400">
+                <div className="w-[450px] h-[250px] flex justify-center items-center mx-auto border-2 rounded-xl border-blue-400 text-[#2D2D2D]">
                   Video not enabled
                 </div>
               )}

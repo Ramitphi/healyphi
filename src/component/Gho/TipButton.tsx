@@ -26,13 +26,14 @@ const TipButton = ({ address, displayName }: Props) => {
   return (
     <div className="flex flex-col">
       <input
-        className="mb-3 h-10 w-full text-black rounded-md"
+        className="mb-3 h-[40px] w-full text-black rounded-md"
         placeholder=" Number of Gho"
         onChange={(e) => setAmount(e.target.value)}
       />
 
       <button
-        className="border mt-3 border-black px-4 py-2 bg-white w-full text-white font-semibold  rounded-md"
+        className="mt-3 px-4 py-2 bg-blue-500 w-full font-semibold  rounded-md"
+        style={{ marginTop: "8px" }}
         onClick={() => {
           // 90% tip to the person
           write({

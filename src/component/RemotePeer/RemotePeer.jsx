@@ -5,7 +5,7 @@ import {
   useRemotePeer,
 } from "@huddle01/react/hooks";
 import React, { useEffect, useRef } from "react";
-import TipButton from "../Gho/TipButton";
+import TipButton from "../Gho/TipButton.tsx";
 
 const RemotePeer = ({ peerId }) => {
   const { stream, state } = useRemoteVideo({ peerId });
@@ -118,7 +118,10 @@ const RemotePeer = ({ peerId }) => {
         Tip {metadata.displayName}
       </button> */}
 
-      <TipButton metadata={metadata} />
+      <TipButton
+        address={metadata.address}
+        displayName={metadata.displayName}
+      />
       <audio ref={audioRef} autoPlay></audio>
       {screenAudio && <audio ref={screenAudioRef} autoPlay></audio>}
     </div>

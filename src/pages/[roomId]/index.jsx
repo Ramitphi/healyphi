@@ -12,20 +12,23 @@ import { AccessToken, Role } from "@huddle01/server-sdk/auth";
 import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { useAccount } from "wagmi";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ token }) {
   const [displayName, setDisplayName] = useState("");
+  const { address } = useAccount();
   const videoRef = useRef(null);
   const screenRef = useRef(null);
   const router = useRouter();
   const [isRecording, setIsRecording] = useState(false);
 
+  console.log({ address });
   const { joinRoom, state } = useRoom({
     onJoin: (room) => {
       console.log("onJoin", room);
-      updateMetadata({ displayName });
+      updateMetadata({ displayName, address });
     },
     onPeerJoin: (peer) => {
       console.log("onPeerJoin", peer);
@@ -151,7 +154,7 @@ export default function Home({ token }) {
                       muted
                     />
                   </div>
-                  {state === "connected" && (
+                  {/* {state === "connected" && (
                     <div className="w-fit flex mt-24">
                       <button
                         className="bg-blue-500 p-2 mx-2 rounded-lg"
@@ -202,7 +205,7 @@ export default function Home({ token }) {
                         {isRecording ? "Stop Recording" : "Start Recording"}
                       </button>
                     </div>
-                  )}
+                  )} */}
                 </div>
               )}
 

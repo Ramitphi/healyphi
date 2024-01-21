@@ -54,10 +54,11 @@ const Meetings = () => {
     return { roomId };
   };
 
+  console.log({ meetings });
   return (
     <div className="bg-[#B1D27B] h-screen w-screen flex items-center flex-col">
       <div className=" mt-24 flex justify-center items-center">
-        <p className="text-lg mx-4">Enter Title</p>
+        <div className="text-lg mx-4">Enter Title</div>
         <input
           className="h-10 rounded text-black"
           onChange={(e) => setMeetingTitle(e.target.value)}
@@ -70,9 +71,27 @@ const Meetings = () => {
         Create Space
       </button>
 
-      <div className="grid grid-cols-3 h-[9/10] overflow-y-auto   w-full">
+      <div className="grid grid-cols-3 h-[9/10] overflow-y-auto bg-red-500  w-full">
         {meetings.map((meeting, i) => {
-          <div className="text-white bg-red-400">{meeting.title}</div>;
+          console.log({ meeting });
+          return (
+            <div className="flex w-72 h-56 my-10 flex-col justify-between border-white border p-4 rounded-md">
+              <div className="flex justify-between ">
+                <p className="text-lg"> {meeting.title}</p>
+              </div>
+
+              <button
+                className="w-full border flex mt-10 justify-center py-2 rounded-md  bg-slate-400"
+                onClick={() => {
+                  alert("Join Room");
+
+                  push(`/${meeting.roomId}`);
+                }}
+              >
+                Join Room
+              </button>
+            </div>
+          );
         })}
       </div>
     </div>

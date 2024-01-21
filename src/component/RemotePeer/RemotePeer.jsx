@@ -2,8 +2,9 @@ import {
   useRemoteAudio,
   useRemoteScreenShare,
   useRemoteVideo,
-} from '@huddle01/react/hooks';
-import React, { useEffect, useRef } from 'react';
+  useRemotePeer,
+} from "@huddle01/react/hooks";
+import React, { useEffect, useRef } from "react";
 
 const RemotePeer = ({ peerId }) => {
   const { stream, state } = useRemoteVideo({ peerId });
@@ -15,9 +16,11 @@ const RemotePeer = ({ peerId }) => {
   const screenVideoRef = useRef(null);
   const screenAudioRef = useRef(null);
 
+  const { metadata } = useRemotePeer(peerId);
+
   useEffect(() => {
-    console.log('stream', stream);
-    if (stream && vidRef.current && state === 'playable') {
+    console.log("stream", stream);
+    if (stream && vidRef.current && state === "playable") {
       vidRef.current.srcObject = stream;
 
       vidRef.current.onloadedmetadata = async () => {
@@ -29,13 +32,13 @@ const RemotePeer = ({ peerId }) => {
       };
 
       vidRef.current.onerror = () => {
-        console.error('videoCard() | Error is hapenning...');
+        console.error("videoCard() | Error is hapenning...");
       };
     }
   }, [stream]);
 
   useEffect(() => {
-    if (audioStream && audioRef.current && audioState === 'playable') {
+    if (audioStream && audioRef.current && audioState === "playable") {
       audioRef.current.srcObject = audioStream;
 
       audioRef.current.onloadedmetadata = async () => {
@@ -47,7 +50,7 @@ const RemotePeer = ({ peerId }) => {
       };
 
       audioRef.current.onerror = () => {
-        console.error('videoCard() | Error is hapenning...');
+        console.error("videoCard() | Error is hapenning...");
       };
     }
   }, [audioStream]);
@@ -65,7 +68,7 @@ const RemotePeer = ({ peerId }) => {
       };
 
       screenVideoRef.current.onerror = () => {
-        console.error('videoCard() | Error is hapenning...');
+        console.error("videoCard() | Error is hapenning...");
       };
     }
   }, [screenVideo]);
@@ -83,7 +86,7 @@ const RemotePeer = ({ peerId }) => {
       };
 
       screenAudioRef.current.onerror = () => {
-        console.error('videoCard() | Error is hapenning...');
+        console.error("videoCard() | Error is hapenning...");
       };
     }
   }, [screenAudio]);
@@ -104,6 +107,7 @@ const RemotePeer = ({ peerId }) => {
           className="border-2 rounded-xl border-white-400 aspect-video"
         />
       )}
+      <button onClick={() => alert(metadata?.address)}>click me</button>
       <audio ref={audioRef} autoPlay></audio>
       {screenAudio && <audio ref={screenAudioRef} autoPlay></audio>}
     </div>

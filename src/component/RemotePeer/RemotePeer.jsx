@@ -100,17 +100,21 @@ const RemotePeer = ({ peerId }) => {
         ref={vidRef}
         autoPlay
         muted
-        className="border-2 rounded-xl border-white-400 aspect-video"
+        className="border-2 rounded-xl border-[#242424] aspect-video"
+        style={{ borderColor: "#242424" }}
       />
       {screenVideo && (
         <video
           ref={screenVideoRef}
           autoPlay
           muted
-          className="border-2 rounded-xl border-white-400 aspect-video"
+          className="border-2 rounded-xl border-[#242424] aspect-video"
+          style={{ borderColor: "#242424" }}
         />
       )}
-      <div className="text-lg font-bold">{metadata.displayName}</div>
+      <div className="text-lg font-medium text-[#2D2D2D]">
+        {metadata.displayName}
+      </div>
 
       <TipButton
         address={metadata.address}

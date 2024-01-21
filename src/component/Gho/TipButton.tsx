@@ -18,6 +18,7 @@ const TipButton = ({ address, displayName }: Props) => {
     abi: abi,
     functionName: "transfer",
   });
+  console.log(address);
 
   const hostamount = Number(amount) * 0.9;
   const projectAmount = Number(amount) * 0.1;
@@ -33,12 +34,17 @@ const TipButton = ({ address, displayName }: Props) => {
       <button
         className="border mt-3 border-black px-4 py-2 bg-white w-full text-white font-semibold  rounded-md"
         onClick={() => {
+          // 90% tip to the person
           write({
             args: [address, parseUnits(hostamount.toString(), 18)],
           });
 
+          //10% tip to the project
           write({
-            args: [address, parseUnits(projectAmount.toString(), 18)],
+            args: [
+              "0xA6e92503837612F1BB5aD10Aa59461Cf8a53bC54",
+              parseUnits(projectAmount.toString(), 18),
+            ],
           });
         }}
       >

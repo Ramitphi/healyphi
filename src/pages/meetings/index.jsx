@@ -73,7 +73,7 @@ const Meetings = () => {
       </button>
       <BorrowButton />
 
-      <div className="grid grid-cols-3 h-[9/10] overflow-y-auto bg-red-500  w-full">
+      <div className="grid grid-cols-3 h-[9/10]  overflow-y-auto  w-3/4">
         {meetings.map((meeting, i) => {
           console.log({ meeting });
           return (

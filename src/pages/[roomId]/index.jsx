@@ -38,7 +38,7 @@ export default function Home({ token }) {
   const { enableAudio, disableAudio, isAudioOn } = useLocalAudio();
   const { startScreenShare, stopScreenShare, shareStream } =
     useLocalScreenShare();
-  const { updateMetadata } = useLocalPeer();
+  const { updateMetadata, metadata } = useLocalPeer();
   const { peerIds } = usePeerIds();
 
   useEffect(() => {
@@ -153,6 +153,9 @@ export default function Home({ token }) {
                       autoPlay
                       muted
                     />
+                  </div>
+                  <div className="text-lg font-bold">
+                    {metadata.displayName}
                   </div>
                   {/* {state === "connected" && (
                     <div className="w-fit flex mt-24">

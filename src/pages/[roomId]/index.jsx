@@ -13,8 +13,6 @@ import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { useAccount } from "wagmi";
-import { image } from "../../../public/image.jpg";
-import { avatar } from "../../../public/avatar";
 
 const inter = Inter({ subsets: ["latin"] });
 

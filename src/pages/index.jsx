@@ -10,27 +10,6 @@ import delegation from "../gho/delegation";
 
 console.log({ delegation });
 export default function Home() {
-  <div className="w-fit bg-blue-400">
-    <svg
-      width="246"
-      height="239"
-      viewBox="0 0 246 239"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect x="50" width="56" height="48" fill="#2C3F2A" />
-      <rect x="122" y="122" width="56" height="48" fill="#2C3F2A" />
-      <rect x="122" width="56" height="48" fill="#2C3F2A" />
-      <rect x="50" y="122" width="56" height="48" fill="#2C3F2A" />
-      <rect x="122" y="61" width="56" height="48" fill="#2C3F2A" />
-      <rect x="50" y="61" width="56" height="48" fill="#2C3F2A" />
-      <path
-        d="M3 185C121 250 135 249 243 185"
-        stroke="#F6EEEE"
-        stroke-width="10"
-      />
-    </svg>
-  </div>;
   const { push } = useRouter();
   const { isConnected, address } = useAccount();
   const debtTokenContractAddress = "0x67ae46EF043F7A4508BD1d6B94DB6c33F0915844";
